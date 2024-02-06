@@ -1,16 +1,17 @@
-#parse month should take in the text of the month and return the number 
-#as a string
-#January -> 1 (as a string)
-#YOU MAY USE THIS FUNCTION IF YOU WANT TO OR YOU MAY REMOVE IT
-def parse_month(month):
-    pass
+from dateutil.parser import parse
 
-#REMOVE PASS AND FIX THIS FUNCTION
-#parse_date function should return the date formated as MM/DD/YYYY
-#DO NOT REMOVE THIS FUNCTION
 def parse_date(user_string):
-    pass
+    dt = parse(user_string)
+    return dt.strftime('%m/%d/%Y')
 
-#REMOVE PASS AND YOUR CODE GOES HERE
+
 if __name__ == '__main__':
-    pass
+   s = set()
+   while True:
+        a = input()
+        if a != "-1":
+            print(parse_date(a))
+        if a == "-1":
+            break
+        else:
+            continue
