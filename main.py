@@ -6,12 +6,13 @@ def parse_date(user_string):
 
 
 if __name__ == '__main__':
-   s = set()
-   while True:
+    s = []
+    while True:
         a = input()
-        if a != "-1":
-            print(parse_date(a))
+        s.append(a)
         if a == "-1":
-            break
-        else:
-            continue
+            for i in s:
+                if i != "-1":
+                    print (parse_date(i))
+                else:
+                    break
