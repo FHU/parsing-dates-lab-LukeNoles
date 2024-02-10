@@ -14,5 +14,4 @@ if __name__ == '__main__':
             for i in s:
                 if i != "-1":
                     print (parse_date(i))
-                else:
-                    break
+            break
