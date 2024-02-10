@@ -4,7 +4,6 @@ def parse_date(user_string):
     dt = parse(user_string)
     return dt.strftime('%m/%d/%Y')
 
-
 if __name__ == '__main__':
     s = []
     while True:
